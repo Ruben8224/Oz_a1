@@ -1,0 +1,171 @@
+<div></div>
+
+<main>
+    <H1> Pruebas de Front-End 1a</H1>
+
+
+
+    <!----------------------P R U E B A A 3 S E G U N D O F R O N T E N D ------------------------>
+    <article style="margin: 5rem;">
+        <section class="container" style="
+        border-color: black;
+        border-style: groove;
+ front
+        background-color: rgb(131, 172, 156);
+      ">
+            <h2 style="font-style: italic; font-weight: 700">Pruebas Front-End A1</h2>
+
+            <div>
+                <div class="col-sm-3">
+                    <div class="card" style="width: 18rem; margin: 1rem 0rem">
+                        <div class="card-body">
+                            <h2> Ingresa los datos:</h2>
+                            <form>
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                    <i class="glyphicon glyphicon-pencil"></i>
+                  </span>
+                                    <input id="numero1A" [(ngModel)]="numero1A" type="number" class="form-control operator1" name="numero1A" placeholder="0.0" />
+                                </div>
+
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                    <i class="glyphicon glyphicon-pencil"></i>
+                  </span>
+                                    <input id="numero2A" [(ngModel)]="numero2A" type="number" class="form-control operator1" name="numero2A" placeholder="0.0" />
+                                </div>
+
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                    <i class="glyphicon glyphicon-pencil"></i>
+                  </span>
+                                    <input id="numero3A" [(ngModel)]="numero3A" type="number" class="form-control operator1" name="numero3A" placeholder="0.0" />
+                                </div>
+
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                    <i class="glyphicon glyphicon-pencil"></i>
+                  </span>
+                                    <input id="numero4A" [(ngModel)]="numero4A" type="number" class="form-control operator1" name="numero4A" placeholder="0.0" />
+                                </div>
+
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                    <i class="glyphicon glyphicon-pencil"></i>
+                  </span>
+                                    <input id="numero5A" [(ngModel)]="numero5A" type="number" class="form-control operator1" name="numero5A" placeholder="0.0" />
+                                </div>
+
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                    <i class="glyphicon glyphicon-pencil"></i>
+                  </span>
+                                    <input id="numero6A" [(ngModel)]="numero6A" type="number" class="form-control operator1" name="numero6A" placeholder="0.0" />
+                                </div>
+
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                    <i class="glyphicon glyphicon-pencil"></i>
+                  </span>
+                                    <input id="numero7A" [(ngModel)]="numero7A" type="number" class="form-control operator1" name="numero7A" placeholder="0.0" />
+                                </div>
+
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                    <i class="glyphicon glyphicon-pencil"></i>
+                  </span>
+                                    <input id="numero8A" [(ngModel)]="numero8A" type="number" class="form-control operator1" name="numero8A" placeholder="0.0" />
+                                </div>
+
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                    <i class="glyphicon glyphicon-pencil"></i>
+                  </span>
+                                    <input id="numero9A" [(ngModel)]="numero9A" type="number" class="form-control operator1" name="numero9A" placeholder="0.0" />
+                                </div>
+
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                    <i class="glyphicon glyphicon-pencil"></i>
+                  </span>
+                                    <input id="numero10A" [(ngModel)]="numero10A" type="number" class="form-control operator1" name="numero10A" placeholder="0.0" />
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="card" style="width: 20rem; margin: -25rem 0rem">
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <button type="button" class="btn btn-primary compute-button" style="
+                  width:10rem;
+                  height: 3rem;
+                  padding: 0;
+                  margin: 0rem 20rem;
+                ">
+                <li class="list-group-item" (click)="Media()" style="
+                    height: 6rem;
+                    margin: 0rem 1rem;
+                    background: none;
+                    border-style: none;
+                  ">
+                  <p style="margin: 10; font-size: 15px; font-weight: 600">
+                  Media
+                  </p>
+                </li>
+              </button>
+
+                            <button type="button" class="btn btn-primary compute-button" style="
+                  width: 10rem;
+                  height: 3rem;
+                  padding: 0;
+                  margin: 10rem 20rem;
+                ">
+                <li class="list-group-item" (click)="Desviacion()" style="
+                    height: 6rem;
+                    margin: 0rem 1rem;
+                    background: none;
+                    border-style: none;
+                  ">
+                  <p style="margin: 10; font-size: 15px; font-weight: 600">
+                    Desviacion
+                  </p>
+                </li>
+              </button>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <section style="margin: 2rem 23rem; ">
+                    <div class="card text-center">
+                        <div class="card-header">Resultado Valor Media</div>
+                        <div class="card-body">
+                            <span class="result">{{ TextValueMedia }}</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section style="margin: 9rem 23rem;">
+                    <div class="card text-center">
+                        <div class="card-header">Resultado Valor Rxy</div>
+                        <div class="card-body">
+                            <span class="result">{{ TextValueDesviacion }}</span>
+                        </div>
+                    </div>
+                </section>
+
+
+
+            </div>
+        </section>
+    </article>
+
+    <!------------------------- F I N D E P R U E B A -------------------------------------- -->
+
+</main>
